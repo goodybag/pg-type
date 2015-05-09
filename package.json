@@ -1,0 +1,40 @@
+{
+  "name": "pg-type",
+  "version": "1.0.0",
+  "description": "Dynamically adds new types to the database and adds new values to _existing_ enums",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "async": "^0.9.0",
+    "lodash": "^3.8.0",
+    "pg": "^4.3.0"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.11.2",
+    "grunt-contrib-watch": "^0.6.1",
+    "mocha": "^2.2.4"
+  },
+  "scripts": {
+    "test": "mocha -R spec test/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/goodybag/pg-type"
+  },
+  "keywords": [
+    "Postgres",
+    "types",
+    "type",
+    "enum",
+    "enums"
+  ],
+  "author": "John Fawcett",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/goodybag/pg-type/issues"
+  },
+  "homepage": "https://github.com/goodybag/pg-type"
+}

@@ -1,6 +1,6 @@
 {
   "name": "pg-type",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Dynamically adds new types to the database and adds new values to _existing_ enums",
   "main": "index.js",
   "directories": {

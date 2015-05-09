@@ -22,6 +22,23 @@ require('pg-type')()
   })
 ```
 
+Then later on you end up modifying your apps types:
+
+```javascript
+require('pg-type')()
+  .connString('postgres://localhost/mydb')
+  .types({
+    some_enum_type:   ['val_1', 'val_2', 'val_3', 'val_4', 'val_5']
+  , some_other_type:  { type: 'domain', as: 'int check ( value < 100 )' }
+  , some_other_type2: { type: 'domain', as: 'int check ( value > 200 )' }
+  })
+  .create( function( error, results ){
+    /* Types added/modified! */
+  })
+```
+
+pgtype will modify your enums (never drops) and add new types.
+
 ## API
 
 ### Root Namespace
